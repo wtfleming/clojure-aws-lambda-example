@@ -10,7 +10,7 @@ Ensure you have installed the AWS SAM CLI https://docs.aws.amazon.com/serverless
 sam build
 
 # Run it locally for testing
-sam local invoke
+sam local invoke --event test/eventbridge-scheduled-event.json
 
 # The first time you deploy run this command to generate a deploy configuration,
 # an S3 bucket, and an ECR repository for the stack
